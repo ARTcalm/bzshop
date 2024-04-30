@@ -1,49 +1,15 @@
 import React, { useState } from "react";
 import Categories from "./Categories"
-import Header from "./Header"
+
 import Items from "./Items"
 import Footer from "./Footer"
-
+import { ITEMS } from "./consts";
+import { ORDER } from "./consts";
 
 
 export const Main = () => {
-  const [orders, setOrders] = useState([])
+  const[orders, setOrders] = useState(ORDER)
   const [currentItems, setCurrentItems] = useState([])
-  const [items] = useState([
-    {
-      id: 1,
-      title: 'Gray Hoodie',
-      img: '1.jpg',
-      desc: 'GREATE Hoodie',
-      category: 'Худи',
-      price: '2500'
-    },
-
-    {
-      id: 2,
-      title: 'Gray Jeans',
-      img: '2.1.jpg',
-      desc: 'boogie-woogie',
-      category: 'Джинсы',
-      price: '2900'
-    }, 
-    {
-      id: 3,
-      title: 'Dust-Pink Brassiere',
-      img: '3.jpeg',
-      desc: "for Ulya's boobs",
-      category: "Лифак",
-      price:'0'
-    },
-    {
-      id: 4,
-      title: 'Pink Cross',
-      img: '4.jpg',
-      desc: 'REAL STYLE',
-      category: 'Обувь',
-      price: '2500'
-    }
-  ])
   const [ShowFullItem, setShowFullItem] = useState(false)
   const [fullItem, setFullItem] = useState({})
   const [functionUI] = useState([{
@@ -71,11 +37,11 @@ export const Main = () => {
 
   const chooseCategory = (category) => {
     if(category === 'Всё'){
-      setCurrentItems(items)
+      setCurrentItems(ITEMS)
       return
     }
 
-    setCurrentItems(items.filter(el => el.category === category))
+    setCurrentItems(ITEMS.filter(el => el.category === category))
   }
 
   const chooseCategoryUI = (categories) => {
@@ -98,8 +64,7 @@ export const Main = () => {
 
   return (
   <div className="wrapper">
-      <Header orders={orders} onDelete={deleteOrder} item={items} />
-      <Categories chooseCategory={chooseCategory} chooseCategoryUI={chooseCategoryUI} />
+
       <Items onShowItem={onShowItem} items={currentItems} onAdd={addToOrder} />
       {ShowFullItem && <ShowFullItem onAdd={addToOrder} onShowItem={onShowItem} item={fullItem} />}
       <Footer/>
