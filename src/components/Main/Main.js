@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Categories from "./Categories"
 
 import Items from "./Items"
 import Footer from "./Footer"
@@ -10,6 +9,7 @@ import { ORDER } from "./consts";
 export const Main = () => {
   const[orders, setOrders] = useState(ORDER)
   const [currentItems, setCurrentItems] = useState([])
+  const [items, setItems] = useState(ITEMS)
   const [ShowFullItem, setShowFullItem] = useState(false)
   const [fullItem, setFullItem] = useState({})
   const [functionUI] = useState([{
@@ -65,7 +65,7 @@ export const Main = () => {
   return (
   <div className="wrapper">
 
-      <Items onShowItem={onShowItem} items={currentItems} onAdd={addToOrder} />
+      <Items onShowItem={onShowItem} items={items} onAdd={addToOrder} />
       {ShowFullItem && <ShowFullItem onAdd={addToOrder} onShowItem={onShowItem} item={fullItem} />}
       <Footer/>
   </div>

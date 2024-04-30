@@ -34,3 +34,26 @@ export const ITEMS=[
     }
   ]
 export const ORDER=[]
+
+export const PAGES = [{
+    key: 'склад',
+    name: 'СКЛАД',
+    route: '/sklad'
+},
+    {
+        key:'торги',
+        name: 'ТОРГИ',
+        route:'/torgi'
+    },
+    {
+        key:'о нас',
+        name: 'О НАС',
+        route: '/aboutus'
+    },
+    {
+        key:'контакты',
+        name: 'КОНТАКТЫ',
+        route: '/contact'
+    },
+
+]
