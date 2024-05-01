@@ -1,33 +1,19 @@
-import React, { useState } from "react";
-
-import Items from "./Items"
+import React, { useEffect, useState } from "react";
+import {Items} from "./Warehouse/Items"
 import Footer from "./Footer"
 import { ITEMS } from "./consts";
 import { ORDER } from "./consts";
+import { Categories } from "./Warehouse/Categories/Categories";
 
 
 export const Main = () => {
   const[orders, setOrders] = useState(ORDER)
   const [currentItems, setCurrentItems] = useState([])
-  const [items, setItems] = useState(ITEMS)
   const [ShowFullItem, setShowFullItem] = useState(false)
   const [fullItem, setFullItem] = useState({})
-  const [functionUI] = useState([{
-      title: 'HYUNA',
-      categories:'склад'
-    },
-    {
-      title:'tete',
-      categories:'торги'
-    },
-    {
-      title:'pzds',
-      categories:'о нас'},
-    {
-      title:'TEST VERSION',
-      categories:'контакты'
-    }])
-  const [currentUI, setCurrentUI] = useState([])
+  
+  
+  useEffect(()=> {setCurrentItems(ITEMS)},[]) // СТРАННАЯ ХУЙНЯ ПОЗЖЕ ПОЙМУ
 
   const onShowItem = (item) => {
     setFullItem(item)
@@ -41,13 +27,9 @@ export const Main = () => {
       return
     }
 
-    setCurrentItems(ITEMS.filter(el => el.category === category))
+    setCurrentItems(ITEMS.filter(el => el.category === category)) 
   }
 
-  const chooseCategoryUI = (categories) => {
-    const filteredUI = functionUI.filter(el => el.categories === categories)
-    setCurrentUI(filteredUI)
-  }
 
 
   const deleteOrder = (id) => {
@@ -64,9 +46,8 @@ export const Main = () => {
 
   return (
   <div className="wrapper">
-
-      <Items onShowItem={onShowItem} items={items} onAdd={addToOrder} />
-      {ShowFullItem && <ShowFullItem onAdd={addToOrder} onShowItem={onShowItem} item={fullItem} />}
+      <Categories chooseCategory={chooseCategory} items={currentItems} />
+      <Items onShowItem={onShowItem} items={currentItems} onAdd={addToOrder} />
       <Footer/>
   </div>
   )

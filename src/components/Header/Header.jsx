@@ -1,19 +1,15 @@
 import React from 'react';
-import Categories from './Categories';
+import styles from './Header.module.css';
 import {NavLink} from "react-router-dom";
-import {PAGES} from "./consts";
+import {PAGES} from "../Main/consts";
 
 export default function Header(props) {
-
-
-
-
 
   return (
     <header>
         <header>
-            <NavLink to={'/'}> <span className='logo'>BZ</span> </NavLink>
-            <div className='categoriesUI'>
+            <span className={styles.logo} >BZ</span>
+            <div className={styles.pages}>
                 {PAGES.map(el => (
                     <NavLink to={el.route}>
                         <div key={el.key}>{el.name}</div>

@@ -1,6 +1,6 @@
 import { useState } from "react"
-import Header from "../Header"
-import { ITEMS } from "../consts"
+import Header from "../Header/Header"
+import { ITEMS } from "../Main/consts"
 
 
 

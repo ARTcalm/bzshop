@@ -34,7 +34,26 @@ export const ITEMS=[
     }
   ]
 export const ORDER=[]
-
+export const CATEGORIES=[{
+    key: 'Всё',
+    name: 'Всё'
+},
+{
+    key: 'Худи',
+    name: 'Худи'
+},
+{
+    key: 'Джинсы',
+    name: 'Джинсы'
+},
+{
+    key: 'Лифак',
+    name: 'Лифак'
+},
+{
+    key: 'Обувь',
+    name: 'Обувь'
+}]
 export const PAGES = [{
     key: 'склад',
     name: 'СКЛАД',

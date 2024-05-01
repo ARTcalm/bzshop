@@ -4,7 +4,13 @@
 *{
     margin : 0;
     padding: 0;
+    a{
+        color: white;
+        text-decoration:none;
+    }
 }
+
+
 
 footer {
     position: absolute;
@@ -73,7 +79,7 @@ main .item{
     margin-right: 50px;
 }
 
-main h2, main p, main b, .full-item h2, .full-item p, .full-item b{
+main h2, main p, main b{
     position: relative;
     top: 20px;
     margin: 10px 20px;
@@ -83,27 +89,27 @@ main h2, main p, main b, .full-item h2, .full-item p, .full-item b{
 }
 
 
-main .item img, .full-item img{
+main .item img{
     width: 100%;
     border-radius: 10px 10px 10px 10px;
     transition: transform 500ms ease;
     cursor: pointer;
 }
 
-main .item img:hover, .full-item img:hover{
+main .item img:hover{
     transform:scale(1.1)
 }
 
-main b, .full-item b{
+main b{
     color:white;
 }
 
-main b, .full-item b{
+main b{
     font-size: 28px;
     font-family: 'Martian Mono', monospace;
 }
 
-main .add-to-cart, .full-item .add-to-cart{
+main .add-to-cart{
     position: absolute;
     right: 30px;
     bottom: 30px;
@@ -115,165 +121,34 @@ main .add-to-cart, .full-item .add-to-cart{
     cursor: pointer;
     transition: transform 500ms ease;
 }
-main .add-to-cart:hover,
-.full-item .add-to-cart:hover{
+main .add-to-cart:hover{
     transform: scale(1.2);
 }
-
-.full-item{
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.76);
-    z-index: 9999;
-    overflow: auto;
-}
-
-.full-item > div {
-    width: 400px;
-    position: relative;
-    margin: 10% auto;
-    padding: 40px 30px;
-    background: #777;
-    border-radius: 15px;
-}
+/*/СТИЛИ ДЛЯ ПРИБЛИЖЕННОГО ОПИСАНИЯ
+.full-item h2, .full-item p, .full-item b{ position: relative;top: 20px;margin: 10px 20px;color: lightgreen;font-family:"Jost", sans-serif ;font-size: 20px;}
+.full-item img{width: 100%;border-radius: 10px 10px 10px 10px;transition: transform 500ms ease;cursor: pointer;}
+.full-item img:hover{transform:scale(1.1)}
+.full-item b{font-size: 28px;font-family: 'Martian Mono', monospace; color:#white}
+.full-item .add-to-cart{position: absolute;right: 30px;bottom: 30px;font-size: 23px;font-weight: 400;font-family: "Jost", sans-serif;background: rgb(128, 202, 110);border-radius: 10px;cursor: pointer;transition: transform 500ms ease;}
+.full-item{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.76);z-index: 9999;overflow: auto;}
+.full-item > div {width: 400px;position: relative;margin: 10% auto;padding: 40px 30px;background: #777;border-radius: 15px;}
+/*/
 
 
 
+.shopcartbutton{position: absolute;right: 710px;top: 170px;font-size: 40px;cursor: pointer;transition: color 500ms ease;}
+.shopcartbutton:hover, .shop-cart-button:active {color: lightgreen;}
+/*/ СТИЛИ ДЛЯ БУДУЩЕЙ КОРЗИНЫ ТОВАРОВ
+header .shop-cart .item{ width: 80%; color:  lightgreen; bottom: 10px;}
+header .shop-cart .item h2{font-size: 18px;argin-top: 30px;}
+header .shop-cart .item b{font-size: 20px;font-weight: 700;font-family: 'Martian Mono', monospace; ;}
+header .shop-cart .item img {width: 85px;float: left;margin-right: 20px;border-radius: 5px;margin-bottom: 10px;}
+header .shop-cart .empty h2 {font-size: 25px; margin-bottom: 10x;}
+header .shop-cart .item .delete-iconcolor: white;float: right;position: relative;top: -20px;left: 40px;cursor: pointer;transition: color, transform 500ms ease;}
+header .shop-cart .item .delete-icon:hover{color:red;transform: scale(1.5);}
+header .shop-cart .summa{ float:left;width: 100%;font-weight: 600;font-size: 20px;font-family: 'Martian Mono', monospace;}  
+/*/
 
-header{
-    position: relative;
-}
-
-header .shop-cart-button{
-    position: absolute;
-    right: 50px;
-    top: 60px;
-    font-size: 40px;
-    cursor: pointer;
-    transition: color 500ms ease;
-}
-
-header .shop-cart-button:hover, header .shop-cart-button:active {
-    color: lightgreen;
-}
-
-header .shop-cart{
-    position: absolute;
-    top: 220px;
-    left:1000px;
-    width: 250px;
-    padding: 20px;
-    background: #777;
-    border-radius: 5px;
- 
-}
-
-header .shop-cart .item{
-    width: 80%;
-    color:  lightgreen;
-    bottom: 10px;
-    
-}
-
-header .shop-cart .item h2{
-    font-size: 18px;
-    margin-top: 30px;
-
-}
-
-
-
-header .shop-cart .item b{
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Martian Mono', monospace; ;
-}
-
-
-header .shop-cart .item img {
-    width: 85px;
-    float: left;
-    margin-right: 20px;
-    border-radius: 5px;
-    margin-bottom: 10px;
-}
-
-header .shop-cart .empty h2 {
-    font-size: 25px;
-    margin-bottom: 10x;
-}
-
-header .shop-cart .item .delete-icon{
-    color: white;
-    float: right;
-    position: relative;
-    top: -20px;
-    left: 40px;
-    cursor: pointer;
-    transition: color, transform 500ms ease;
-}
-
-header .shop-cart .item .delete-icon:hover{
-    color:red;
-    transform: scale(1.5);
-}
-
-header .shop-cart .summa{
-    float:left;
-    width: 100%;
-    font-weight: 600;
-    font-size: 20px;
-    font-family: 'Martian Mono', monospace;
-}
-
-
-
-
-.categories div{
-    position: relative;
-    float: left;
-    display: inline;
-    background: white;
-    color: black;
-    border-radius: 50px;
-    padding: 10px 20px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    cursor: pointer;
-    border: 4px solid transparent;
-    transition: all 500ms ease;
-    
-}
-.categories div:hover {
-    border-color: silver;
-    transform: scale(1.1);
-}
-
-.categoriesUI div{
-    position: relative;
-    display: inline;
-    background: #555;
-    bottom: 120px;
-    font-size: 35px;
-    font-family: 'Jost', sans-serif;
-    font-weight: 200;
-    left: 250px;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 20px;
-    margin-bottom: 10px;
-    margin-right: 40px;
-    cursor: pointer;
-    border: 4px solid transparent;
-    transition: all 500ms ease;
-}
-.categoriesUI div:hover {
-    opacity: 0.5;
-    transform: scale(1.1);
-}
 
 
 
