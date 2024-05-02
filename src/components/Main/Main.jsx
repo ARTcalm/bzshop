@@ -16,8 +16,8 @@ export const Main = () => {
   useEffect(()=> {setCurrentItems(ITEMS)},[]) // СТРАННАЯ ХУЙНЯ ПОЗЖЕ ПОЙМУ
 
   const onShowItem = (item) => {
-    setFullItem(item)
-    setShowFullItem(prev => !prev)
+    setFullItem(item) // стеашь в стейт, но не используешь, просто замедляется приложение, удали
+    setShowFullItem(prev => !prev) // Тоже самое
   }
 
 
@@ -34,7 +34,7 @@ export const Main = () => {
 
   const deleteOrder = (id) => {
     setOrders(prev => prev.filter(el => el.id !== id))
-  }
+  } // Не храни мусор, удаляй то, что не используется
 
   const addToOrder = (item) => {
     const isInArray = orders.some(el => el.id === item.id)
@@ -43,8 +43,8 @@ export const Main = () => {
       setOrders(prev => [...prev, item])
   }
 
-
-  return (
+// Не подключен модуль css, но при этом есть класс
+  return ( 
   <div className="wrapper">
       <Categories chooseCategory={chooseCategory} items={currentItems} />
       <Items onShowItem={onShowItem} items={currentItems} onAdd={addToOrder} />
@@ -53,3 +53,4 @@ export const Main = () => {
   )
 }
 
+// Тут вообще не нужно называть компоненту Main, на самом деле, это ведь склад, держи все что в только к нему относится в папке, остальное вынеси
