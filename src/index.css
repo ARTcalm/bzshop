@@ -9,14 +9,6 @@
         text-decoration:none;
     }
 }
-
-
-
-footer {
-    position: absolute;
-    
-}
-
 body {
     background: #333;
     color: white;
@@ -29,38 +21,6 @@ body {
     margin: 50px auto;
 }
 
-header .logo{
-    font-size: 120px;
-    font-weight: 600;
-}
-
-header ul.nav {
-    float: right;
-    list-style: none;
-}
-
-header ul.nav main{
-    position: relative;
-    right: 150px;
-    top: 50px;
-    display: inline;
-    margin-left: 20px;
-    font-family: 'Jost', sans-serif;
-    font-size: 40px;
-    font-weight: 200;
-    cursor: pointer;
-    transition: opacity 400ms ease;
-    background-color: #444;
-    border-radius: 5px;
-    padding: 10px 30px;
-}
-
-header ul.nav main:hover{
-    opacity: 0.5;
-}
-
-
-
 main {
     display: flex;
     width: 100%;
@@ -68,62 +28,6 @@ main {
    
 }
 
-main .item{
-    position: relative;
-    width: 22%;
-    margin-bottom: 30px;
-    background: #777;
-    border-radius: 10px 10px 0 0;
-    overflow: hidden;
-    padding-bottom: 50px;
-    margin-right: 50px;
-}
-
-main h2, main p, main b{
-    position: relative;
-    top: 20px;
-    margin: 10px 20px;
-    color: lightgreen;
-    font-family:"Jost", sans-serif ;
-    font-size: 20px;
-}
-
-
-main .item img{
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    transition: transform 500ms ease;
-    cursor: pointer;
-}
-
-main .item img:hover{
-    transform:scale(1.1)
-}
-
-main b{ /* Так никогда не делай, заведи класс .bold для этого элемента, и назначь ему font-weight  */
-    color:white;
-}
-
-main b{
-    font-size: 28px;
-    font-family: 'Martian Mono', monospace;
-}
-
-main .add-to-cart{
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    font-size: 23px;
-    font-weight: 400;
-    font-family: "Jost", sans-serif;
-    background: rgb(128, 202, 110);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 500ms ease;
-}
-main .add-to-cart:hover{
-    transform: scale(1.2);
-}
 /*/СТИЛИ ДЛЯ ПРИБЛИЖЕННОГО ОПИСАНИЯ
 .full-item h2, .full-item p, .full-item b{ position: relative;top: 20px;margin: 10px 20px;color: lightgreen;font-family:"Jost", sans-serif ;font-size: 20px;}
 .full-item img{width: 100%;border-radius: 10px 10px 10px 10px;transition: transform 500ms ease;cursor: pointer;}
@@ -133,11 +37,7 @@ main .add-to-cart:hover{
 .full-item{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.76);z-index: 9999;overflow: auto;}
 .full-item > div {width: 400px;position: relative;margin: 10% auto;padding: 40px 30px;background: #777;border-radius: 15px;}
 /*/
-
-
-
-.shopcartbutton{position: absolute;right: 710px;top: 170px;font-size: 40px;cursor: pointer;transition: color 500ms ease;}
-.shopcartbutton:hover, .shop-cart-button:active {color: lightgreen;}
+    
 /*/ СТИЛИ ДЛЯ БУДУЩЕЙ КОРЗИНЫ ТОВАРОВ
 header .shop-cart .item{ width: 80%; color:  lightgreen; bottom: 10px;}
 header .shop-cart .item h2{font-size: 18px;argin-top: 30px;}

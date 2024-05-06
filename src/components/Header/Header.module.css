@@ -27,4 +27,10 @@
     opacity: 0.5;
     transform: scale(1.1);
 }
-/* Заведи отдельный класс для div */
+.pages .shopcartbutton{position: absolute;right: 610px;top: 65px;font-size: 40px;cursor: pointer;transition: color 500ms ease;}
+.pages .shopcartbutton:hover, .shop-cart-button:active {color: lightgreen;}
+.pages footer{
+    position: absolute;
+    bottom:-400px;
+    left: 360px;
+}

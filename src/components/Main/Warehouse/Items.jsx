@@ -1,20 +1,16 @@
 import React, { useState } from 'react'
 import Item from './Item/Item'
-import { FaShoppingCart } from 'react-icons/fa'
 import { ITEMS } from '../consts'
 
-export const Items = () =>{
-    let[cartOpen,setCartOpen] = useState(false) 
+
+export const Items = (currentItems) =>{
+    const[items] = useState(currentItems)
+
     return (
       <main>
-        <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={`shopcartbutton ${cartOpen && 'active'}`} />
-        {ITEMS.map(el => ( 
+        {items.map(el => (
             <Item  key={el.id} item={el}  />
-        ))} 
+        ))}
       </main>
     )
-  }
-
-  // Ты не принимаешь пропс с текущими элементами (хотя он прокидывается), как следсвтие мапишься по константе всегда, поэтому ничего не меняется. 
-
-
+}
