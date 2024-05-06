@@ -1,18 +1,23 @@
 import React, { Component } from 'react'
 import styles from './Item.module.css'
 
-export class Item extends Component {
-  render() {
+export const Item = (props) => {
+
+    const {setCartItems, item} = props
+
+    const handleAddCart = () => {
+        setCartItems(prev => [...prev, item])
+    }
+
     return (
       <div className={styles.item}>
-        <img src = { "./img/" + this.props.item.img} onClick={() => this.props.onShowItem(this.props.item)} />
-        <h2>{this.props.item.title}</h2>
-        <p>{this.props.item.desc}</p>
-        <b>{this.props.item.price}₽</b>
-        <div className={styles.addtocart} >ЗАКИНУТЬ</div>
+        <img src = { "./img/" + item.img} onClick={() => this.props.onShowItem(this.props.item)} />
+        <h2>{item.title}</h2>
+        <p>{item.desc}</p>
+        <b>{item.price}₽</b>
+        <button onClick={handleAddCart} className={styles.addtocart} >ЗАКИНУТЬ</button>
       </div>
     )
-  }
 }
 
 export default Item

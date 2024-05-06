@@ -3,13 +3,14 @@ import Item from './Item/Item'
 import { ITEMS } from '../consts'
 
 
-export const Items = (currentItems) =>{
-    const[items] = useState(currentItems)
+export const Items = (props) =>{
+    const { setCartItems, items } = props
+
 
     return (
       <main>
         {items.map(el => (
-            <Item  key={el.id} item={el}  />
+            <Item setCartItems={setCartItems}  key={el.id} item={el}  />
         ))}
       </main>
     )

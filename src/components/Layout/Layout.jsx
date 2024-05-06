@@ -1,12 +1,13 @@
-import { useState } from "react"
+import {useState} from "react"
 import Header from "../Header/Header"
-import { ITEMS } from "../Main/consts"
+import {ITEMS} from "../Main/consts"
 
 
+export const Layout = (props) => {
+    const {cartItems, setCartItems} = props
 
-export const Layout = () => {
     const [items] = useState(ITEMS)
 
 
-    return <Header item={items}  />
+    return <Header cartItems={cartItems} setCartItems={setCartItems} item={items}  />
 }

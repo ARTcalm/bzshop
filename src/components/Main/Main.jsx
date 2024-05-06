@@ -4,7 +4,10 @@ import { ITEMS } from "./consts";
 import { Categories } from "./Warehouse/Categories/Categories";
 
 
-export const Main = () => {
+export const Main = (props) => {
+
+  const { setCartItems } = props
+
   const [currentItems, setCurrentItems] = useState([])
 
   
@@ -27,7 +30,7 @@ export const Main = () => {
   return ( 
   <div className="wrapper">
       <Categories chooseCategory={chooseCategory} items={currentItems} />
-      <Items  items={currentItems} />
+      <Items items={currentItems} setCartItems={setCartItems} />
 
   </div>
   )

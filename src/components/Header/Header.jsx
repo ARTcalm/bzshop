@@ -6,14 +6,18 @@ import { FaShoppingCart } from 'react-icons/fa';
 import Footer from './Footer';
 
 export default function Header(props) {
-  const[cartOpen,setCartOpen] = useState(false)
+    const {cartItems, setCartItems} = props // закинешь их в компонту корзины, когда сделаешь
+
+    const[cartOpen,setCartOpen] = useState(false)
+
+    console.log('Предметы для корзины', cartItems)
 
   return (
     <header>
             <span className={styles.logo} >BZ</span>
             <div className={styles.pages}>
                 {PAGES.map(el => (
-                    <NavLink to={el.route}>
+                    <NavLink key={el.route} to={el.route}>
                         <div  className={styles.categories}  key={el.key} >{el.name}</div>
                     </NavLink>
                 ))}
