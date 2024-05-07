@@ -6,11 +6,10 @@ import { FaShoppingCart } from 'react-icons/fa';
 import Footer from './Footer';
 
 export default function Header(props) {
-    const {cartItems, setCartItems} = props // закинешь их в компонту корзины, когда сделаешь
-
-    const[cartOpen,setCartOpen] = useState(false)
-
+    const {cartItems} = props // закинешь их в компонту корзины, когда сделаешь
     console.log('Предметы для корзины', cartItems)
+
+    let [cartOpen, setCartOpen] = useState(false)
 
   return (
     <header>
@@ -21,7 +20,12 @@ export default function Header(props) {
                         <div  className={styles.categories}  key={el.key} >{el.name}</div>
                     </NavLink>
                 ))}
-              <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={styles.shopcartbutton} />
+              <FaShoppingCart className={styles.shopcartbutton} onClick={() => setCartOpen(cartOpen = !cartOpen)} />
+              {cartOpen && (
+                <div className={styles.shopCart} >
+                  {cartItems.map(el => <div key={el.id} item={el} ></div> )}
+                </div>
+              )}
               <Footer className={styles.footer}/>
             </div>
     </header>

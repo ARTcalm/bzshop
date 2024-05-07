@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import Item from './Item/Item'
-import { ITEMS } from '../consts'
+import React from 'react'
+import Item from './Warehouse/Item/Item'
 
 
 export const Items = (props) =>{
-    const { setCartItems, items } = props
-
+    const {setCartItems, items} = props
+  
 
     return (
       <main>

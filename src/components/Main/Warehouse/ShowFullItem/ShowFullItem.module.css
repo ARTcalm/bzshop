@@ -1,7 +1,0 @@
-.fullitem h2, p, b{ position: relative;top: 20px;margin: 10px 20px;color: lightgreen;font-family:"Jost", sans-serif ;font-size: 20px;}
-.fullitem img{width: 100%;border-radius: 10px 10px 10px 10px;transition: transform 500ms ease;cursor: pointer;}
-.fullitem img:hover{transform:scale(1.1)}
-.fullitem b{font-size: 28px;font-family: 'Martian Mono', monospace; color:white}
-.fullitem .add-to-cart{position: absolute;right: 30px;bottom: 30px;font-size: 23px;font-weight: 400;font-family: "Jost", sans-serif;background: rgb(128, 202, 110);border-radius: 10px;cursor: pointer;transition: transform 500ms ease;}
-.fullitem{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.76);z-index: 9999;overflow: auto;}
-.fullitem > div {width: 400px;position: relative;margin: 10% auto;padding: 40px 30px;background: #777;border-radius: 15px;}

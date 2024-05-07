@@ -5,7 +5,7 @@
     left: 360px;
 }
 
-.pages div{
+.pages .categories{
     position: relative;
     display: inline;
     background: #555;
@@ -23,14 +23,24 @@
     border: 4px solid transparent;
     transition: all 500ms ease;
 }
-.pages div:hover {
+.pages .categories:hover {
     opacity: 0.5;
     transform: scale(1.1);
 }
-.pages .shopcartbutton{position: absolute;right: 610px;top: 65px;font-size: 40px;cursor: pointer;transition: color 500ms ease;}
-.pages .shopcartbutton:hover, .shop-cart-button:active {color: lightgreen;}
+
 .pages footer{
     position: absolute;
     bottom:-400px;
     left: 360px;
+}
+.pages .shopcartbutton{position: absolute;right: 610px;top: 65px;font-size: 40px;cursor: pointer;transition: color 500ms ease;}
+.pages .shopcartbutton:hover, .shop-cart-button:active {color: lightgreen;}
+
+.shopCart{
+    position: absolute;
+    background: #666;
+    top: 250px;
+    right: 300px;
+    width: 350px;
+    min-height: 100px;
 }

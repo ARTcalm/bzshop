@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import styles from './Item.module.css'
 
 export const Item = (props) => {
@@ -11,7 +11,7 @@ export const Item = (props) => {
 
     return (
       <div className={styles.item}>
-        <img src = { "./img/" + item.img} onClick={() => this.props.onShowItem(this.props.item)} />
+        <img src = { "./img/" + item.img} />
         <h2>{item.title}</h2>
         <p>{item.desc}</p>
         <b>{item.price}₽</b>
