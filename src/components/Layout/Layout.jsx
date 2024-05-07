@@ -9,5 +9,5 @@ export const Layout = (props) => {
     const [items] = useState(ITEMS)
 
 
-    return <Header cartItems={cartItems} setCartItems={setCartItems} item={items}  />
+    return <Header cartItems={cartItems} setCartItems={setCartItems} item={items} />
 }

@@ -7,7 +7,7 @@ export const Routers = () => {
 
     const [cartItems, setCartItems] = useState([])
 
-    const renderMain = () => <Main setCartItems={setCartItems} />
+    const renderMain = () => <Main setCartItems={setCartItems} cartItems={cartItems} />
 
     return <div><Layout cartItems={cartItems} setCartItems={setCartItems} />
         <Switch>
