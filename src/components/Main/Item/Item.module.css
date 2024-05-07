@@ -10,7 +10,7 @@
     bottom:100px;
 }
 
-h2, main p, main b{
+.TITLE , .DESC , .PRICE{
     position: relative;
     top: 20px;
     margin: 10px 20px;

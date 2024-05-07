@@ -1,5 +1,5 @@
 import React from 'react'
-import { CATEGORIES } from '../../consts'
+import { CATEGORIES } from '../consts'
 import styles from './Categories.module.css'
 
 export const Categories = (category) =>{

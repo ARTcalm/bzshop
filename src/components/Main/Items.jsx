@@ -1,5 +1,5 @@
 import React from 'react'
-import Item from './Warehouse/Item/Item'
+import Item from './Item/Item'
 
 
 export const Items = (props) =>{
