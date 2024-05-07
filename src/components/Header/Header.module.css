@@ -2,10 +2,10 @@
     position: relative;
     font-size: 120px;
     font-weight: 600;
-    left: 360px;
+    left: 100px;
 }
 
-.pages div{
+.pages .categories{
     position: relative;
     display: inline;
     background: #555;
@@ -13,7 +13,7 @@
     font-size: 35px;
     font-family: 'Jost', sans-serif;
     font-weight: 200;
-    left: 500px;
+    left: 300px;
     color: white;
     border-radius: 5px;
     padding: 5px 20px;
@@ -23,14 +23,71 @@
     border: 4px solid transparent;
     transition: all 500ms ease;
 }
-.pages div:hover {
+.pages .categories:hover {
     opacity: 0.5;
     transform: scale(1.1);
 }
-.pages .shopcartbutton{position: absolute;right: 610px;top: 65px;font-size: 40px;cursor: pointer;transition: color 500ms ease;}
-.pages .shopcartbutton:hover, .shop-cart-button:active {color: lightgreen;}
-.pages footer{
+.pages .shopcartbutton{
     position: absolute;
-    bottom:-400px;
-    left: 360px;
+    right: 160px;
+    top: 65px;
+    font-size: 40px;
+    cursor: pointer;
+    transition: color 500ms ease;
+}
+
+.pages .shopcartbutton:hover, .shop-cart-button:active {
+    color: lightgreen;
+}
+
+footer{
+    position: absolute;
+    bottom:-500px;
+    left: 100px;
+}
+
+.shoppingCart{
+    position: absolute;
+    width: 250px;
+    right:10px;
+    background: #666;
+    border-radius: 15px;
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.CartItems{ 
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+
+.cartIMG{
+    width: 45%;
+    border-radius: 15px;
+    float: left;
+    margin-right: 20px;
+}
+
+
+.cartTITLE{
+    font-size: 20px;
+    margin-bottom: 10px;
+    color:  lightgreen; 
+}
+.cartPRICE{
+
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Martian Mono', monospace;
+
+}
+
+.empty{
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Jost', sans-serif;
+    padding-bottom: 10px;
+    position: relative;
+    left: 10px;
 }
