@@ -1,0 +1,12 @@
+.HUY {
+    position: absolute;
+    left: 550px;
+    font-size: 400px;
+    cursor: pointer;
+    transition: color 500ms ease;
+}
+
+.HUY:hover{
+    color: wheat;
+    opacity: 0.5;
+}

@@ -1,9 +1,10 @@
 import React from 'react'
+import styles from './Header.module.css';
 
 export default function Footer() { 
   return (
-    <footer>
-      Все права защищены &copy;
-    </footer>
+    <main className={styles.Footer}>
+        <p align = "center" >Все права защищены &copy;</p>
+    </main>
   )
 }

@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.HeadBackground{
+    background: rgba(255, 255, 255, 0.26);
+    width: 1200px;
+    height: 700px;
+    border-radius: 10px;
+    padding: 0px 10px;
+
+    position: absolute;
+    left:300px;
+    top: 200px;
+}
+
+.HeadButtonBackground {
+    background: rgba(255, 255, 255, 0.712);
+    width: 600px;
+    height: 500px;
+    
+    position: relative;
+    left: 25px;
+    top: 20px;
+    
+    transition: opacity 500ms ease;
+    cursor: pointer;
+}
+
+.HeadButtonBackground:hover {
+    opacity: 0.5;
+}
+
+.BodyButtonBackground {
+    
+    background: #555;
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+
+    position: relative;
+    left: 250px;
+    top: 170px;
+}   
+
+.Button{
+    font-size: 40px;
+    font-weight: 700;
+
+    position: relative;
+    left:38px;
+    bottom: -28px;
+}
+
+.Meeting{
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+
+    background: #555;
+    padding: 20px 15px;
+    border-radius: 30px;
+    transition: all 550ms ease;
+    cursor: pointer;
+}
+
+.Meeting:hover{
+    opacity: 0.7;
+}
+
+.WarningMessage{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 9999;
+    overflow: auto;
+    cursor: pointer;
+}
+
+.MessageBackground{
+    position: absolute;
+    background: #666;
+    padding: 30px 30px;
+
+    top: 210px;
+    left: 150px
+}
+
+.Message{
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Jost', sans-serif;
+}
+
+.FakeButton{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 30px;
+    transition: all 500ms ease;
+    cursor: pointer;
+}
+
+.FakeButton:hover{
+    opacity: 0.5;
+}
+
+.PriceBanner{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    font-size: 30px;
+    font-family: 700;
+    font-family: 'Jost', sans-serif;
+}
+
+.PriceBlock{
+    position: relative;
+    top:10px;
+    background: white;
+    padding: 10px 10px;
+    width: 500px;
+
+    border-radius: 10px ;
+    border: 5px solid transparent;
+    border-color: #555;
+}
+
+.InputPrice{
+    color: #777;
+    opacity: 0.5;
+}
+
+.DescBanner{
+    position: absolute;
+    right: 20px;
+    top: 150px;
+
+    font-size: 30px;
+    font-family: 700;
+    font-family: 'Jost', sans-serif;
+}
+
+.DescBlock{
+    position: relative;
+    top:10px;
+    
+    background: white;
+    padding: 10px 10px;
+    width: 500px;
+    height: 300px;
+
+    border-radius: 10px ;
+    border: 5px solid transparent;
+    border-color: #555;
+}
+
+.InputDesc{
+    color: #777;
+    opacity: 0.5;
+}

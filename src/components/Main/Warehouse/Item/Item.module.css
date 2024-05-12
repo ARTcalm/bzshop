@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.item{
+    position: relative;
+    width: 22%;
+    left: 80px;
+    margin-bottom: 30px;
+    background: #777;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    padding-bottom: 50px;
+    margin-right: 50px;
+    bottom:100px;
+}
+
+.item .name, .desc, .price{
+    position: relative;
+    top: 20px;
+    margin: 10px 20px;
+    color: lightgreen;
+    font-family:"Jost", sans-serif ;
+    font-size: 20px;
+}
+
+
+.item img{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    transition: transform 500ms ease;
+    cursor: pointer;
+}
+
+.item img:hover{
+    transform:scale(1.1)
+}
+
+.price{
+    color:white;
+}
+
+.price{
+    font-size: 28px;
+    font-family: 'Martian Mono', monospace;
+}
+
+.addtocart{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    background: rgb(128, 202, 110);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+}
+.addtocart:hover{
+    transform: scale(1.2);}
+
+
+
+.fullitem .FullItemTitle, .FullItemDesc, .FullItemPrice{ 
+    position: relative;
+    top: 20px;
+    margin: 10px 20px;
+    color: lightgreen;
+    font-family:"Jost", sans-serif ;
+    font-size: 20px;
+}
+    
+.fullitem .FullItemImg{
+    width: 100%;
+    border-radius: 10px 10px 10px 10px;
+    transition: transform 500ms ease;
+    cursor: pointer;
+    }
+    
+.fullitem .FullItemImg:hover{
+    transform:scale(1.1)
+}
+    
+.fullitem .FullItemPrice{
+    font-size: 28px;
+    font-family: 'Martian Mono', monospace; 
+    color:white
+}
+    
+.fullitem .addtocart_fullitem{
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 23px;
+    font-weight: 400;
+    font-family: "Jost", sans-serif;
+    background: rgb(128, 202, 110);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 500ms ease;
+    }
+    
+.fullitem {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.76);
+    z-index: 9999;
+    overflow: auto;
+}
+    
+.fullitem > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 40px 30px;
+    background: #777;
+    border-radius: 15px;
+}
+

@@ -54,7 +54,8 @@ export const CATEGORIES=[{
     key: 'Обувь',
     name: 'Обувь'
 }]
-export const PAGES = [{
+export const PAGES = [
+    {
     key: 'склад',
     name: 'СКЛАД',
     route: '/sklad'
@@ -68,11 +69,6 @@ export const PAGES = [{
         key:'о нас',
         name: 'О НАС',
         route: '/aboutus'
-    },
-    {
-        key:'контакты',
-        name: 'КОНТАКТЫ',
-        route: '/contact'
     },
 
 ]

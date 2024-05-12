@@ -1,6 +1,6 @@
 import {useState} from "react"
 import Header from "../Header/Header"
-import {ITEMS} from "../Main/consts"
+import {ITEMS} from "../../consts"
 
 
 export const Layout = (props) => {
@@ -9,5 +9,5 @@ export const Layout = (props) => {
     const [items] = useState(ITEMS)
 
 
-    return <Header cartItems={cartItems} setCartItems={setCartItems} item={items} />
+    return <Header cartItems={cartItems} setCartItems={setCartItems} item={items}  />
 }

@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import {NavLink} from "react-router-dom";
-import {PAGES} from "../Main/consts";
+import {PAGES} from "../../consts";
 import { FaShoppingCart, FaTrash } from 'react-icons/fa';
 import Footer from './Footer';
+import Contact from './Contact';
 
 export default function Header(props) {
     const {cartItems,setCartItems} = props 
@@ -39,7 +40,7 @@ export default function Header(props) {
             <div className={styles.pages}>
                 {PAGES.map(el => (
                     <NavLink key={el.route} to={el.route}>
-                        <div  className={styles.categories}  key={el.key} >{el.name}</div>
+                        <div  className={styles.categories}  key={el.key} ><div>{el.name}</div></div>
                     </NavLink>
                 ))}
               <FaShoppingCart onClick={() => setCartOpen(cartOpen = !cartOpen)} className={styles.shopcartbutton} />
@@ -47,7 +48,8 @@ export default function Header(props) {
                 {cartItems.length > 0 ?
                 showCartItems(cartItems): showNothing()}
               </div>)}
-              <Footer className={styles.footer}/>
+              <Contact />
+              <Footer />
             </div>
     </header>
   )
