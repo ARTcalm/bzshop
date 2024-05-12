@@ -28,34 +28,3 @@ main {
    
 }
 
-
-
-
-/*/СТИЛИ ДЛЯ ПРИБЛИЖЕННОГО ОПИСАНИЯ
-.full-item h2, .full-item p, .full-item b{ position: relative;top: 20px;margin: 10px 20px;color: lightgreen;font-family:"Jost", sans-serif ;font-size: 20px;}
-.full-item img{width: 100%;border-radius: 10px 10px 10px 10px;transition: transform 500ms ease;cursor: pointer;}
-.full-item img:hover{transform:scale(1.1)}
-.full-item b{font-size: 28px;font-family: 'Martian Mono', monospace; color:#white}
-.full-item .add-to-cart{position: absolute;right: 30px;bottom: 30px;font-size: 23px;font-weight: 400;font-family: "Jost", sans-serif;background: rgb(128, 202, 110);border-radius: 10px;cursor: pointer;transition: transform 500ms ease;}
-.full-item{position: fixed;top: 0;bottom: 0;left: 0;right: 0;background: rgba(0, 0, 0, 0.76);z-index: 9999;overflow: auto;}
-.full-item > div {width: 400px;position: relative;margin: 10% auto;padding: 40px 30px;background: #777;border-radius: 15px;}
-/*/
-    
-/*/ СТИЛИ ДЛЯ БУДУЩЕЙ КОРЗИНЫ ТОВАРОВ
-header .shop-cart .item{ width: 80%; color:  lightgreen; bottom: 10px;}
-header .shop-cart .item h2{font-size: 18px;argin-top: 30px;}
-header .shop-cart .item b{font-size: 20px;font-weight: 700;font-family: 'Martian Mono', monospace; ;}
-header .shop-cart .item img {width: 85px;float: left;margin-right: 20px;border-radius: 5px;margin-bottom: 10px;}
-header .shop-cart .empty h2 {font-size: 25px; margin-bottom: 10x;}
-header .shop-cart .item .delete-iconcolor: white;float: right;position: relative;top: -20px;left: 40px;cursor: pointer;transition: color, transform 500ms ease;}
-header .shop-cart .item .delete-icon:hover{color:red;transform: scale(1.5);}
-header .shop-cart .summa{ float:left;width: 100%;font-weight: 600;font-size: 20px;font-family: 'Martian Mono', monospace;}  
-/*/
-
-
-
-/* Не привязывай стили к названием тегов, потом с ума сойдешь, когда стили друг на друга наслаиваться начнут, модули как раз нужны, чтобы у тебя для каждого элемента был свой класс. 
-
-Так же не используй такую вложенность, она нужна только в крайних случаях, причина такая же, и выше.
-
-index.css нужен только для общих стилей всего приложения, тут нельзя устраивать помойку, так как с ростом приложения она разрастется и случится то, что описано выше.     */
