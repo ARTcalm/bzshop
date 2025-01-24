@@ -4,7 +4,7 @@ import styles from './Header.module.css';
 export default function Footer() { 
   return (
     <main className={styles.Footer}>
-        <p align = "center" >Все права защищены &copy;</p>
+        <p align = "center" ></p>
     </main>
   )
 }

@@ -2,26 +2,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .logo{
-    position: relative;
     font-size: 120px;
     font-weight: 600;
-    left: 400px;
+    color: white;
+}
+
+.logo, .pages {
+    position: relative;
+    left: 700px;
 }
 
 .pages .categories div {
     display: inline;
-    color: black;
+}
+
+.pages .categories div {
+    color:black
+}
+.pages .categories{
+    position: relative;
+    left:160px;
+    bottom: 115px;
 }
 
 .pages .categories{
-    position: relative;
     display: inline;
     background: white;
-    bottom: 120px;
     font-size: 40px;
     font-family: 'Jost', sans-serif;
     font-weight: 200;
-    left: 550px;
     color: white;
     border-radius: 5px;
     padding: 5px 60px;
@@ -35,116 +44,23 @@
     opacity: 0.5 ;
 }
 .pages .shopcartbutton{
-    position: absolute;
-    right: 550px;
-    top: 70px;
+    position: relative;
+    right: -200px;
+    top: -110px;
     font-size: 40px;
     cursor: pointer;
     transition: color 500ms ease;
 }
 
-.pages .shopcartbutton:hover, .shop-cart-button:active {
+.pages .shopcartbutton:hover, .pages .shopcartbutton:active {
     color: lightgreen;
 }
 
-.Footer{
-    position: absolute;
-    bottom:-600px;
-    left: 890px;
-    font-weight: 200;
-    font-size: 15px;
-    font-family: 'Jost', sans-serif;
-}
-
-/*ВСЁ СВЯЗАННОЕ С КОНТАКТАМИ*/
-.Contact{
-    position: absolute;
-    bottom: -600px ;
-    background: #222;
-    width: 2000px;
-    height: 200px;
-}
-
-.Contact .HContact{
-    position: relative;
-    left: 300px;
-    font-size: 30px;
-    font-weight: 800;
-}
-
-.Contact .WContact{
-    position: relative;
-    left: 600px;
-    font-size: 30px;
-    font-weight: 800;
-
-}
-
-.Contact .Telegram{
-    position: absolute;
-    bottom: 120px;
-    left:350px;
-    font-size:20px;
-    font-weight: 900;
-    font-family: 'Jost', sans-serif;;
-    color: lightgreen;
-    margin-top: 10px;
-}
-.Contact .Instagram{
-    position: absolute;
-    bottom:90px;
-    font-size:20px;
-    font-weight: 900;
-    font-family: 'Jost', sans-serif;
-    color: lightgreen;
-    margin-top: 10px;
-    left: 350px;
-}
-.Contact .VKontacte{
-    position: absolute;
-    font-size:20px;
-    font-weight: 900;
-    font-family: 'Jost', sans-serif;;
-    color: lightgreen;
-
-    margin-top: 10px;
-    left: 350px;
-    bottom: 60px;
-}
-
-.Contact .Adrees{
-    position: absolute;
-    font-size:20px;
-    font-weight: 900;
-    font-family: 'Jost', sans-serif;;
-    color: lightgreen;
-    left: 950px;
-    bottom: 120px;
-}
-
-.Contact .Metro{
-    position: absolute;
-    font-size:20px;
-    font-weight: 900;
-    font-family: 'Jost', sans-serif;;
-    color: lightgreen;
-    left: 950px;
-    bottom: 40px;
-}
-
-.Contact .Metro li{
-    position: relative;
-    list-style: none;
-    font-size:18px;
-    font-weight: 100;
-    font-family: 'Jost', sans-serif;;
-    left: 40px
-}
 
 .shoppingCart{
     position: absolute;
     width: 250px;
-    right:300px;
+    left:1100px;
     background: #666;
     border-radius: 15px;
     padding: 10px;
