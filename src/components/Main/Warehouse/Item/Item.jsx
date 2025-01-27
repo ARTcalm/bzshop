@@ -7,6 +7,7 @@ export const Item = (props) => {
 
     const handleAddCart = () => {// К ФУНКЦИИ ДОБАВЛЕНИЯ В КОРЗИНУ, ДОБАВИЛ УСЛОВИЕ ЧТОБЫ ТОВАРЫ НЕ ПОВТОРЯЛИСЬ В КОРЗИНЕ БОЛЬШЕ 1 РАЗА
       const isInArray = cartItems.some(el => el.id === item.id)
+      
 
       if(!isInArray)
         setCartItems(prev => [...prev, item])

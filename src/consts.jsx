@@ -5,7 +5,8 @@ export const ITEMS=[
       img: '1.jpg',
       desc: 'GREATE Hoodie',
       category: 'Худи',
-      price: '2500'
+      price: '2500',
+      count:1,
     },
 
     {
@@ -14,7 +15,8 @@ export const ITEMS=[
       img: '2.1.jpg',
       desc: 'boogie-woogie',
       category: 'Джинсы',
-      price: '2900'
+      price: '2900',
+      count:1,
     }, 
     {
       id: 3,
@@ -22,7 +24,8 @@ export const ITEMS=[
       img: '3.jpeg',
       desc: "for Ulya's boobs",
       category: "Лифак",
-      price:'0'
+      price:'0',
+      count:1,
     },
     {
       id: 4,
@@ -30,7 +33,8 @@ export const ITEMS=[
       img: '4.jpg',
       desc: 'REAL STYLE',
       category: 'Обувь',
-      price: '2500'
+      price: '2500',
+      count:1,
     }
   ]
 export const ORDER=[]
