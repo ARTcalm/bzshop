@@ -11,11 +11,7 @@ export const Main = (props) => {
 
   const [currentItems, setCurrentItems] = useState([])
 
-  
-  
   useEffect(()=> {setCurrentItems(ITEMS)},[]) // СТРАННАЯ ХУЙНЯ ПОЗЖЕ ПОЙМУ
-
-
 
   const chooseCategory = (category) => {
     if(category === 'Всё'){
