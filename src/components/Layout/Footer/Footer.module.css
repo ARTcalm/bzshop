@@ -1,0 +1,17 @@
+.FOOTER{
+    background: lightgreen;
+    position: relative;
+    display: flex;
+    min-height: 17vh;
+    min-width: 500px;
+}
+
+.messagebackground{
+    position: relative;
+    margin: 0  auto;
+}
+
+.message{
+    font-size: 800%;
+   
+}

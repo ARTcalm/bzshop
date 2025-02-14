@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+.main{
+    background: white;
+    height: 78vh;    
+}
 
 .HeadBackground{
-    background: rgba(255, 255, 255, 0.26);
+    background: grey;
     width: 1200px;
     height: 700px;
     border-radius: 10px;
     padding: 0px 10px;
-
     position: relative;
-    left:600px;
-    top: -50px;
+    margin: 0px auto;
+    top:20px;
 }
 
 .HeadButtonBackground {

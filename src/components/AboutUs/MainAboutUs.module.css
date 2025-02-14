@@ -1,108 +1,119 @@
 
 .AboutUs{
-    position: absolute;
-
-    left: 600px;
-    top:-150px
+    position: relative;
+    background: white;
+    min-height: 90vh;
+    z-index: 1;
 }
 
+
 .BackgroundFirst{
-    position: absolute;
-    background: #777;
+    position: relative;
+    background: lightgreen;
     border-radius: 30px;
-    width: 750px;
+    margin: 0px auto;
+    width: 800px;
     height: 200px;
     padding: 5px 5px;
-    left: 20px;
-    top:380px;
-
+    left: -200px;
+    top: 20px;
 }
 
 .First{
-    position: absolute;
-    top: 20px;
-    left: 25px;
+    position: relative;
+    top: 15px;
+    left: 12px;
 
     text-align: left;
-    font-size: 40px;
+    font-size: 250%;
     font-weight: 200;
     font-family: 'Jost', sans-serif;
 }
 
 .BackgroundSecond{
-    position: absolute;
-    background: #222;
+    position: relative;
+    background: lightgreen;
+    margin: 0px auto;
+    left: -100px;
+    top: 0px;
     border-radius: 30px;
     width: 700px;
     height: 130px;
-    padding: 5px 5px;
-    left: 170px;
-    top: 580px
-
+    padding: 5px 10px;
 }
 
 .Second{
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 8px;
 
     text-align: left;
-    font-size: 40px;
+    font-size: 240%;
     font-weight: 200;
     font-family: 'Jost', sans-serif;
 }
 
 .BackgroundThird{
-    position: absolute;
-    background: #333;
+    position: relative;
+    background: lightgreen;
     border-radius: 30px;
     width: 700px;
-    height: 130px;
-    padding: 5px 5px;
-    left: 50px;
-    top: 800px
+    height: auto;
+    padding: 10px 10px;
+    margin: 0px auto;
+    left: -290px;
+    top: 60px
 }
 
 .Third{
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 8px;
 
     text-align: left;
-    font-size: 30px;
+    font-size: 200%;
     font-weight: 200;
     font-family: 'Jost', sans-serif;
 }
 
 .BackgroundFour{
-    position: absolute;
-    background: #444;
+    position: relative;
+    background: lightgreen;
     border-radius: 30px;
     width: 560px;
-    height: 330px;
+    height: auto;
     padding: 5px 20px;
-    left: 700px;
-    top: 660px
+    padding-bottom: 20px;
+    margin: 0 auto;
+    left: 345px;
+    top: -170px
 }
 
-.Foursec{
-    position: absolute;
-    top: 220px;
-    left: 8px;
-
-    text-align: left;
-    font-size: 25px;
-    font-weight: 200;
-    font-family: 'Jost', sans-serif;
-}
 
 .Four{
-    position: absolute;
+    position: relative;
     top: 10px;
     left: 8px;
 
     text-align: left;
-    font-size: 30px;
+    font-size: 200%;
     font-weight: 200;
+    font-family: 'Jost', sans-serif;
+}
+
+.BackgroundFive{
+    position: relative;
+    width:max-content;
+    margin: 0 auto;
+    top: -130px;
+    left: 0px;
+}
+
+.Five{
+    position: relative;
+    color:lightgreen;
+    text-align: left;
+    font-size: 750%;
+    font-weight: 400;
     font-family: 'Jost', sans-serif;
 }

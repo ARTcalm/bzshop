@@ -1,0 +1,16 @@
+.wrapper{
+    position: relative;
+    top: 10px;
+    left:50px;
+    width: 50%;
+    height: 10%;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Main {
+    width: 100%;
+    min-height: 102vh;
+    background: white;
+}

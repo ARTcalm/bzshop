@@ -35,7 +35,41 @@ export const ITEMS=[
       category: 'Обувь',
       price: '2500',
       count:1,
-    }
+    },
+    {
+      id: 5,
+      title: 'Gray Hoodie',
+      img: '1.jpg',
+      desc: 'GREATE Hoodie',
+      category: 'Худи',
+      price: '2500',
+      count:1,
+    },{
+      id: 6,
+      title: 'Gray Hoodie',
+      img: '1.jpg',
+      desc: 'GREATE Hoodie',
+      category: 'Худи',
+      price: '2500',
+      count:1,
+    },
+    {
+      id: 7,
+      title: 'Gray Hoodie',
+      img: '1.jpg',
+      desc: 'GREATE Hoodie',
+      category: 'Худи',
+      price: '2500',
+      count:1,
+    },{
+      id: 8,
+      title: 'Gray Hoodie',
+      img: '1.jpg',
+      desc: 'GREATE Hoodie',
+      category: 'Худи',
+      price: '2500',
+      count:1,
+    },
   ]
 export const ORDER=[]
 export const CATEGORIES=[{

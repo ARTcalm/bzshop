@@ -12,19 +12,8 @@
 body {
     background: #333;
     color: white;
-    font-family: "Jost", sans-serif;
-    font-weight: 300px;
+    overflow-x: hidden ;
 }
 
-.wrapper{
-    position: relative;
-    left:100px;
-    width: 1280px;
-    margin: 50px auto;
-}
 
-main {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-}
+

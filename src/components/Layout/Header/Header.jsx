@@ -1,10 +1,11 @@
-import React, { use, useState } from 'react';
+import React, {useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import {NavLink} from "react-router-dom";
-import {PAGES} from "../../consts";
+import {PAGES} from "../../../consts";
 import { FaShoppingCart, FaTrash } from 'react-icons/fa';
-import Footer from './Footer';
-import Contact from './Contact';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+
+
 
 export const Header = (props) => {
     const {cartItems, setCartItems} = props
@@ -57,15 +58,16 @@ export const Header = (props) => {
       (
         
         <div key={el.id} className={styles.CartItems}>
-            <img src = { "./img/" + el.img} className={styles.cartIMG} />
+            <img src = { "./img/" + el.img} className={styles.cartIMG} alt='cartImage'/>
             <p className={styles.cartTITLE}>{el.title}</p>
             <b className={styles.cartPRICE}>{el.price}₽</b>
             <FaTrash className={styles.DeleteCartItems} onClick={() => {DeleteCartItems(el.id)}} key={el.id} item={el} />
             <div className={styles.PMButtons}>
               <button className={styles.cartPlus}  onClick={()=>plus(el.id)} >+</button>
+              <p className = {styles.colichestvo}>{el.count}</p>
               <button className={styles.cartMinus} onClick={()=> minus(el.id)}>-</button>
             </div>
-            <p className = {styles.colichestvo} >Количество : {el.count}</p>
+            
         </div>
       ))}<p className={styles.Summa}>Сумма: {new Intl.NumberFormat().format(summa)}₽</p>
       </div>)
@@ -76,12 +78,17 @@ export const Header = (props) => {
       return(<div className={styles.empty}>В КАРМАНАХ ПУСТО</div>) 
     }
 
+  
+  const backmainpage = () =>{
+    //НУЖНА ФУНКЦИЯ ВОЗВРАТА НА ГЛАВНУЮ СТРАНИЦУ ТОБИЖ НА СКЛАД
+  }
 
   let[cartOpen,setCartOpen] = useState(false)
 
   return (
-    <header>
-            <span className={styles.logo} >BZ</span>
+    <div className={styles.HEADER}>
+      <div className={styles.background}>
+            <div className={styles.logo} onClick={() => backmainpage()} >BZ</div>
             <div className={styles.pages}>
                 {PAGES.map(el => (
                     <NavLink key={el.route} to={el.route}>
@@ -93,9 +100,8 @@ export const Header = (props) => {
                 {cartItems.length > 0 ?
                 showCartItems(cartItems): showNothing()}
               </div>)}
-              <Contact />
-              <Footer />
             </div>
-    </header>
+        </div>
+    </div>
   )
 }

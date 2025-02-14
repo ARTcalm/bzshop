@@ -4,14 +4,17 @@
 .item{
     position: relative;
     width: 22%;
-    left: 80px;
+    left: 0px;
     margin-bottom: 30px;
     background: #777;
+    border: black;
+    border-style:solid;
+    border-width: 3px;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     padding-bottom: 50px;
-    margin-right: 50px;
-    bottom:100px;
+    margin-right: 30px;
+    top: 10px
 }
 
 .item .name, .desc, .price{
@@ -58,7 +61,6 @@
 }
 .addtocart:hover{
     transform: scale(1.2);}
-
 
 
 .fullitem .FullItemTitle, .FullItemDesc, .FullItemPrice{ 
@@ -108,7 +110,7 @@
     right: 0;
     background: rgba(0, 0, 0, 0.76);
     z-index: 9999;
-    overflow: auto;
+    overflow: hidden;
 }
     
 .fullitem > div {
