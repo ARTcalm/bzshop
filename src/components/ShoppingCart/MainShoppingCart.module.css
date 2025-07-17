@@ -1,0 +1,192 @@
+.CART{
+    
+    background: white;
+    min-height: 67vh;
+    display: flex;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.CARTplace{
+    width: 150vh;
+    background: white;
+    margin: 0 auto;
+    border-top: 0px;
+    border-bottom: 0px;
+    border-left: 2px;
+    border-right: 2px;
+    border-style: groove;
+    display: flex;
+}
+
+.CartItems{
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    left: 10vh;
+    padding: 10px;
+    border-top: 0px;
+    border-bottom: 2px;
+    border-left: 0px;
+    border-right: 2px;
+    border-style: groove;
+
+    width: 70vh;
+    height: 17.6vh;
+}
+
+.cartIMG{
+    width: 27%;
+    height: 22%;
+    float: left;
+    margin-right: 20px;
+    
+    min-height: 17.5vh;
+}
+
+
+.cartTITLE{
+    font-size: 200%;
+    margin-bottom: 1vh;
+    color:  lightgreen;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+
+}
+
+.cartDESC{
+    font-size: 100%;
+    margin-bottom: 1vh;
+    color:  black;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+
+}
+
+.cartPRICE{
+    margin-bottom: 1vh;
+    color: black;
+    font-size: 160%;
+    font-weight: 700;
+    font-family: 'Martian Mono', monospace;
+
+}
+
+.PMButtons{
+    position: relative;
+    display: flex;
+    margin-top: 10px;
+    
+}
+
+.CountItem{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-family: 'Martian Mono', monospace;
+    font-size: 20px;
+    font-weight: 900;
+    color:black;
+}
+
+.cartPlus{
+    border: none;
+    background: rgb(218, 218, 218);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Martian Mono', monospace;
+    font-size: 12px;
+    font-weight: 900;
+    transition: all 500ms ease;
+}
+
+.cartMinus{
+    background: rgb(218, 218, 218);
+    border: none;
+    width:20px;
+    padding: 2px;
+    cursor: pointer;
+    font-family: 'Martian Mono', monospace;
+    font-size: 12px;
+    font-weight: 900;
+    transition: all 200ms ease;
+}
+
+.cartPlus:hover , .cartMinus:hover{
+    background: lightgreen;
+    color: white;
+}
+
+.empty{
+    text-decoration-line: underline;
+    font-size: 200%;
+    font-weight: 300;
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    color:black;
+    margin: 0 auto;
+    margin-right: 423px;
+    top:10vh;
+    left: 30vh;    
+}
+
+.DeleteCartItems{
+    position: relative;
+    color: red;
+    float: right;
+    cursor: pointer;
+    font-size: 250%;
+    transition: all 500ms;
+}
+
+.DeleteCartItems:hover{
+    transform: scale(1.15);
+}
+
+
+.DescCart{
+    position: relative;
+    margin: 0 auto;
+    top: 2vh;
+    padding: 0;
+    
+    width: 30vh;
+    height: 13.5vh;
+    max-height: min-content;
+
+}
+
+.DescCartHeader{
+    font-size:230%;
+    font-weight: 700;
+    font-family: 'Martian Mono', monospace;
+    color:black;
+    margin-bottom: 10px;
+}
+
+.DescCartMain{
+    padding: 10px 0px;
+    border-top: 2px;
+    border-bottom: 2px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: groove;
+}
+
+.DescCartCount, .DescCartSale{
+    font-size:130%;
+    font-weight: 700;
+    font-family: 'Martian Mono', monospace;
+    margin-bottom: 10px;
+    color:black;
+}
+
+.Summa{
+    
+    line-height: 140%;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Martian Mono', monospace;
+    padding-bottom: 10px;
+    color:black;
+}

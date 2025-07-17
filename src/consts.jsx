@@ -1,3 +1,12 @@
+export const SLIDERPHOTO = [
+  {id: 1, img: '1.jpg'}, 
+  {id: 2, img: '2.1.jpg'},
+  {id: 3, img: '4.jpg'},
+
+  {id: 5, img: '6.jpg'},
+  {id: 2, img: '7.jpg'},
+]
+
 export const ITEMS=[
     {
       id: 1,
@@ -44,7 +53,8 @@ export const ITEMS=[
       category: 'Худи',
       price: '2500',
       count:1,
-    },{
+    },
+    {
       id: 6,
       title: 'Gray Hoodie',
       img: '1.jpg',
@@ -104,8 +114,8 @@ export const PAGES = [
         route:'/torgi'
     },
     {
-        key:'о нас',
-        name: 'О НАС',
+        key:'КОМПАНИЯ',
+        name: 'КОМПАНИЯ',
         route: '/aboutus'
     },
 

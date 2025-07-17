@@ -2,170 +2,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 .HEADER{
-    height: 17vh;
+    height: 170px;
     background: lightgreen;
 }
 
+.pages{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
 .logo{
-    font-size: 120px;
+    font-size: 750%;
     font-weight: 600;
     color: white;
     font-family: "Jost", sans-serif;
-    font-weight: 300px;
+    cursor: pointer;
 }
 
-.logo, .pages {
-    position: relative;
-    left: 70vh;
+
+.categories{
+    border-bottom: 1px solid transparent;
+    border-color:white;
 }
 
-.pages .categories div {
-    display: inline;
+.categories{
+    text-align: center;
+    letter-spacing: 10px;
+    font-size: 200%;
+    font-family: 'Jost', sans-serif;
+    font-weight: 200;
+    padding: 5px 20px;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+    transition: all 500ms ease;
+    overflow: none;
+}
+.categories:hover {
+    opacity: 0.5 ;
 }
 
-.pages .categories div {
-    color:black
-}
-.pages .categories{
-    position: relative;
-    left:160px;
-    bottom: 115px;
-}
+.categoriesDESC {
 
-.pages .categories{
-    display: inline;
-    background: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    border: 4px solid transparent;
+    color:black;
     font-size: 40px;
     font-family: 'Jost', sans-serif;
     font-weight: 200;
-    color: white;
-    border-radius: 5px;
-    padding: 5px 60px;
-    margin-bottom: 10px;
-    margin-left: 30px;
-    cursor: pointer;
-    border: 4px solid transparent;
-    transition: all 500ms ease;
 }
-.pages .categories:hover {
-    opacity: 0.5 ;
-}
-.pages .shopcartbutton{
+
+
+.shopcartbutton{
     position: relative;
-    right: -200px;
-    top: -110px;
-    font-size: 40px;
+    font-size: 300%;
     cursor: pointer;
     transition: color 500ms ease;
 }
 
-.pages .shopcartbutton:hover, .pages .shopcartbutton:active {
+.shopcartbutton:hover, .shopcartbutton:active {
     color: rgb(235, 104, 104);
-}
-
-
-.shoppingCart{
-    z-index: 9;
-    position: absolute;
-    width: 250px;
-    margin: 0 auto;
-    left: 1200px;
-    background: #666;
-    border-radius: 15px;
-    padding: 10px;
-    padding-bottom: 0;
-}
-
-.CartItems{ 
-    width: 100%;
-    float: left;
-    margin-bottom: 20px;
-}
-
-.cartIMG{
-    width: 45%;
-    border-radius: 15px;
-    float: left;
-    margin-right: 20px;
-}
-
-
-.cartTITLE{
-    font-size: 15px;
-    margin-bottom: 5px;
-    color:  lightgreen;
-    font-weight: 700;
-    font-family: 'Martian Mono', monospace;
-
-}
-.cartPRICE{
-
-    font-size: 18px;
-    font-weight: 700;
-    font-family: 'Martian Mono', monospace;
-
-}
-
-.PMButtons{
-    position: relative;
-    display: flex;
-    margin-top: 10px;
-}
-
-.colichestvo{
-    margin-left: 5px;
-    margin-right: 5px;
-    font-family: 'Martian Mono', monospace;
-    font-size: 20px;
-    font-weight: 900;
-}
-
-.cartPlus{
-    border: none;
-    background: rgb(218, 218, 218);
-    width: 20px;
-    cursor: pointer;
-    font-family: 'Martian Mono', monospace;
-    font-size: 12px;
-    font-weight: 900;
-   
-}
-
-.cartMinus{
-    background: rgb(218, 218, 218);
-    border: none;
-    width:20px;
-    padding: 2px;
-    cursor: pointer;
-    font-family: 'Martian Mono', monospace;
-    font-size: 12px;
-    font-weight: 900;
-}
-
-.empty{
-    font-size: 25px;
-    font-weight: 200;
-    font-family: 'Jost', sans-serif;
-    padding-bottom: 10px;
-    position: relative;
-    left: 10px;
-}
-.DeleteCartItems{
-    position: absolute;
-    right: 10px;
-    cursor: pointer;
-    font-size: 30px;
-    transition: all 500ms;
-}
-
-.DeleteCartItems:hover{
-    color:red;
-    transform: scale(1.05);
-}
-
-.Summa{
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Martian Mono', monospace;
-    padding-bottom: 10px;
 }

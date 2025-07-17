@@ -1,5 +1,6 @@
 import React, {useState}from 'react'
 import styles from './Item.module.css'
+import ReactPaginate from 'react-paginate'
 
 export const Item = (props) => {
 
@@ -22,6 +23,7 @@ export const Item = (props) => {
         <p className={styles.desc}>{item.desc}</p>
         <b className={styles.price}>{item.price}₽</b>
         <button onClick={handleAddCart} className={styles.addtocart} >ЗАКИНУТЬ</button>
+       
           {ShowFullitem && (
               <div className={styles.fullitem}>
                 <div>

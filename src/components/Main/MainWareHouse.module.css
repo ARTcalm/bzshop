@@ -1,16 +1,65 @@
-.wrapper{
-    position: relative;
-    top: 10px;
-    left:50px;
-    width: 50%;
-    height: 10%;
-    margin: 0px auto;
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.SLIDER{
+    width: 100%;
+    background: white;
+    overflow: hidden;
+}
+
+.elementsOfItems{
     display: flex;
     flex-wrap: wrap;
 }
 
-.Main {
+.ITEMS{
+    padding: 15px;
+    position: relative;
+    width: 75%;
+}
+
+
+
+.CATEGORIES{
+    position: relative;
+    width: 25%;
+}
+
+.WarehousePage {
+    display: flex;
     width: 100%;
-    min-height: 102vh;
+    min-height: 66vh;
     background: white;
 }
+
+.containerPagination{
+    float: inline-end;    
+    position: relative;
+    margin-top: 2vh;
+    background-color: lawngreen;
+    max-width: max-content;
+    color: white;
+    display: flex;
+}
+
+.pagePagination{
+    transition: all 500ms;
+    cursor: pointer;
+}
+
+.pagePagination:hover{
+    opacity: 0.5;
+}
+
+.pageElement{
+    position: relative;
+
+    width: 50px;
+    font-size:30px;
+    border:1px;
+    border-style: groove;
+    color:black
+}
+

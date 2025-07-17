@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 .FOOTER{
     background: lightgreen;
     position: relative;
@@ -6,12 +10,66 @@
     min-width: 500px;
 }
 
-.messagebackground{
+.copyrate p{
     position: relative;
-    margin: 0  auto;
+    left: 100vh;
+    top: 14vh;
+
+    font-size: 80%;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
 }
 
-.message{
-    font-size: 800%;
-   
+.BackButton{
+    background: rgb(119, 196, 119);
+    
+}
+
+.BackButton .DoubleUp, .BackButton .ButtonLabel{
+    position: relative;
+    top: 4em;
+    display: block;
+    opacity: 0.7;
+
+}
+
+.BackButton .DoubleUp{
+    margin: 0 auto;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+    
+    
+}
+
+.BackButton .ButtonLabel{
+    margin: 0 auto;
+    font-size: 100%;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+    
+}
+
+
+.SocietyBlock{
+    position: relative;
+    margin: auto;
+}
+
+.SocietyBlock p{
+    font-size: 250%;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+}
+
+.ContactBlock{
+    position: relative;
+    margin:auto;
+    left: -300px;
+}
+
+.ContactBlock p{
+    font-size: 220%;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
 }
