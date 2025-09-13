@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+
+@keyframes unvisibile{
+    from {
+        opacity: 1;
+        display: flex;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes rotating{
+    from{
+        transform: rotate(-250deg);
+        right: 300px;
+        
+    }
+
+    60%{
+        transform: rotate(30deg);
+        right: -10px;
+    }
+
+    to{
+        transform: rotate(0);
+        right:0px;
+    }
+}
+
+.mainBackground{
+    animation-name: unvisibile;
+    animation-duration: 3.5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+.mainBackground{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 1000005;
+    height: 100vh;
+    width: 100vw;
+    background: #000000;
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.modalContent{
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.contentImage img{
+    position: relative;
+    height: 330px;
+    width: 330px;
+}
+
+.contentImage img{
+    animation-name: rotating;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}

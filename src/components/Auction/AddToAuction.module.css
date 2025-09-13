@@ -3,7 +3,8 @@
 
 .main{
     background: white;
-    height: 78vh;    
+    min-height: max-content;
+    padding-bottom: 30px;
 }
 
 .HeadBackground{

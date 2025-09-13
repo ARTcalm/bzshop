@@ -1,16 +1,11 @@
-.CART{
-    
-    background: white;
-    min-height: 67vh;
-    display: flex;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+.CARTblock{
+    width: 100%;
 }
 
 .CARTplace{
-    width: 150vh;
+    min-height: 100vh;
     background: white;
-    margin: 0 auto;
+    margin: 0 auto;    
     border-top: 0px;
     border-bottom: 0px;
     border-left: 2px;
@@ -30,7 +25,6 @@
     border-left: 0px;
     border-right: 2px;
     border-style: groove;
-
     width: 70vh;
     height: 17.6vh;
 }
@@ -46,7 +40,7 @@
 
 
 .cartTITLE{
-    font-size: 200%;
+    font-size: 150%;
     margin-bottom: 1vh;
     color:  lightgreen;
     font-weight: 400;

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 *{
     text-decoration: none;
     list-style-type: none;
 }
+
 
 .SLIDER{
     width: 100%;
@@ -15,7 +18,7 @@
 }
 
 .ITEMS{
-    padding: 15px;
+    padding: 10px;
     position: relative;
     width: 75%;
 }
@@ -34,32 +37,72 @@
     background: white;
 }
 
-.containerPagination{
+.containerClassName{
     float: inline-end;    
     position: relative;
-    margin-top: 2vh;
-    background-color: lawngreen;
     max-width: max-content;
     color: white;
     display: flex;
+    right: 50px;
 }
 
-.pagePagination{
+.pageClassName{
     transition: all 500ms;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.pagePagination:hover{
+.pageClassName:hover{
     opacity: 0.5;
 }
 
-.pageElement{
+.pageLinkClassName{
     position: relative;
-
-    width: 50px;
-    font-size:30px;
-    border:1px;
-    border-style: groove;
+    font-size:40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     color:black
 }
+
+.pageLinkClassName{
+    position: relative;
+    padding: 0px 10px 0px 10px;
+}
+
+.previousContainer{
+    color:black;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+.nextContainer{
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.previousContainer, .nextContainer{
+    transition: all 300ms ease;
+}
+
+.previousContainer a, .nextContainer a{
+    color:black;
+    font-size: 40px;
+}
+
+.previousContainer:hover, .nextContainer:hover{
+    opacity: 0.5;
+}
+
+
+
 

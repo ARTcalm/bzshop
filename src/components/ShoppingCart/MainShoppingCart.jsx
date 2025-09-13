@@ -48,12 +48,12 @@ export const Cart = (props) =>{
         }
 
     return(
-         <div className={styles.CART}>
+         <div className={styles.CARTblock}>
             <div className={styles.CARTplace}>
             <div> {cartItems.length > 0 ? cartItems.map(el => 
             (
               <div key={el.id} className={styles.CartItems}>
-                  <img src = { "./img/" + el.img} className={styles.cartIMG} alt='cartImage'/>
+                  <img src = { "./img/" + el.img1} className={styles.cartIMG} alt='cartImage'/>
                   <p className={styles.cartTITLE}>{el.title}</p>
                   <p className={styles.cartDESC}>{el.desc}</p>
                   <b className={styles.cartPRICE}>{new Intl.NumberFormat().format(el.count * el.price)}₽</b>
@@ -66,15 +66,13 @@ export const Cart = (props) =>{
               </div>
             )): showNothing()} </div>
               <div className={styles.DescCart}>
-              <p className={styles.DescCartHeader}>Корзина</p>
-              <div className={styles.DescCartMain}>  
-                <p className={styles.DescCartCount}>Количество: {new Intl.NumberFormat().format(sumcount)}</p>
-                <p className={styles.DescCartSale}>Ваша скидка: 0%</p>
-              </div>
-              <p className={styles.Summa}>Сумма: {new Intl.NumberFormat().format(summa)}₽</p>
+                <p className={styles.DescCartHeader}>Корзина</p>
+                <div className={styles.DescCartMain}>  
+                  <p className={styles.DescCartCount}>Количество: {new Intl.NumberFormat().format(sumcount)}</p>
+                  <p className={styles.DescCartSale}>Ваша скидка: 0%</p>
+                </div>
+                <p className={styles.Summa}>Сумма: {new Intl.NumberFormat().format(summa)}₽</p>
               </div>
             </div>
-          </div>
-          
-          
+          </div>                  
 )} 

@@ -22,7 +22,7 @@ export const Items = (props) =>{
         <div className={styles.itemsblock}>
           <div className={styles.elementsOfItems}>
           {currentItemsOnPage.map(el => (
-              <Item setCartItems={setCartItems} cartItems={cartItems} key={el.id} item={el} />
+              <Item setCartItems={setCartItems} cartItems={cartItems} key={el.id} item={el}/>
           ))}</div>
           <ReactPaginate 
                     breakLabel="..."
@@ -32,9 +32,12 @@ export const Items = (props) =>{
                     pageCount={pageCount}
                     previousLabel="< "
                     renderOnZeroPageCount={null}
-                    containerClassName={styles.containerPagination}
-                    pageClassName={styles.pagePagination}
-                    pageLinkClassName={styles.pageElement}
+                    containerClassName={styles.containerClassName}
+                    pageClassName={styles.pageClassName}
+                    pageLinkClassName={styles.pageLinkClassName}
+                    pageLabelBuilder={styles.pageLabalBuilder}
+                    nextClassName={styles.nextContainer}
+                    previousClassName={styles.previousContainer}
                 />
         </div>
       </div>

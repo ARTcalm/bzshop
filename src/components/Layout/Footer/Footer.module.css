@@ -3,26 +3,52 @@
 
 
 .FOOTER{
-    background: lightgreen;
+    background: white;
     position: relative;
     display: flex;
     min-height: 17vh;
     min-width: 500px;
+    border: 1px solid;
+    border-color: black;
 }
 
-.copyrate p{
+.Blocks{
     position: relative;
-    left: 100vh;
-    top: 14vh;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
 
-    font-size: 80%;
+.SocietyBlock{
+    position: relative;
+}
+
+.SocietyBlock p{
+    font-size: 220%;
+    font-weight: 400;
+    font-family: 'Martian Mono', monospace;
+    color:black;
+}
+
+.ContactBlock{
+    position: relative;
+}
+
+.ContactBlock p{
+    color: black;
+    font-size: 220%;
     font-weight: 400;
     font-family: 'Martian Mono', monospace;
 }
 
 .BackButton{
-    background: rgb(119, 196, 119);
-    
+    background: rgb(40, 46, 40);
+    transition: all 0.3s ease;
+}
+
+.BackButton:hover{
+    background: rgb(21, 22, 21);
 }
 
 .BackButton .DoubleUp, .BackButton .ButtonLabel{
@@ -45,31 +71,9 @@
 .BackButton .ButtonLabel{
     margin: 0 auto;
     font-size: 100%;
-    font-weight: 400;
+    font-weight: 200;
     font-family: 'Martian Mono', monospace;
     
 }
 
 
-.SocietyBlock{
-    position: relative;
-    margin: auto;
-}
-
-.SocietyBlock p{
-    font-size: 250%;
-    font-weight: 400;
-    font-family: 'Martian Mono', monospace;
-}
-
-.ContactBlock{
-    position: relative;
-    margin:auto;
-    left: -300px;
-}
-
-.ContactBlock p{
-    font-size: 220%;
-    font-weight: 400;
-    font-family: 'Martian Mono', monospace;
-}

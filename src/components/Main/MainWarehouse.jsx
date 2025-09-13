@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {Items} from "./Warehouse/Items"
 import { ITEMS } from "../../consts";
 import { Categories } from "./Warehouse/Categories/Categories";
@@ -10,7 +10,7 @@ import { Slider } from "./Warehouse/Slider/Slider";
 
 export const Main = (props) => {
 
-  const { cartItems, setCartItems } = props
+  const { cartItems, setCartItems} = props
 
   const [currentItems, setCurrentItems] = useState([])
 
@@ -25,13 +25,13 @@ export const Main = (props) => {
   useEffect(()=> {setCurrentItems(ITEMS)},[])
 
   return ( 
-  <main>
+  <div>
       <Slider />
     <div className={styles.WarehousePage}>
       <Categories  chooseCategory={chooseCategory} items={currentItems} />
-      <Items items={currentItems} setCartItems={setCartItems} cartItems={cartItems}  />
+      <Items items={currentItems} setCartItems={setCartItems} cartItems={cartItems}/>
     </div>
-  </main>
+  </div>
   )
 }
 

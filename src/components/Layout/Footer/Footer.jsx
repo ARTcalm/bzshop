@@ -13,16 +13,17 @@ export const Footer = () => {
   return (
     <div className={styles.FOOTER}>
       <div className={styles.BackButton}  onClick={() => TurnUp()}><FaAngleDoubleUp className={styles.DoubleUp}/><p className={styles.ButtonLabel} >наверх</p></div>
-      <div className={styles.copyrate}><p>Всё защищено©</p></div>
-      <div className={styles.SocietyBlock}>
-        <p><FaVk />VK: </p>
-        <p><FaInstagram />INST:</p>
-        <p><FaTelegram/>TG: </p>
-      </div>
-      <div className={styles.ContactBlock}>
-        <p>Adress:</p>
-        <p>Mail:</p>
-        <p>Telephone:</p>
+      <div className={styles.Blocks}>
+        <div className={styles.SocietyBlock}>
+          <p><FaVk />VK: </p>
+          <p><FaInstagram />INST:</p>
+          <p><FaTelegram/>TG: </p>
+        </div>
+        <div className={styles.ContactBlock}>
+          <p>Adress:</p>
+          <p>Mail:</p>
+          <p>Telephone:</p>
+        </div>
       </div>
     </div>
   )

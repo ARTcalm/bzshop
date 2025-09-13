@@ -3,59 +3,71 @@
 
 .item{
     position: relative;
-    width: 22%;
+    width: 230px;
     left: 0px;
-    background: #777;
+    background-color: black;
     border: black;
-    border-style:solid;
-    border-width: 3px;
+    border-top: 4px solid black;
     border-radius: 10px 10px 0 0;
-    overflow:hidden;
-    padding-bottom: 20px;
     margin-bottom: 10px;
-    margin-right: 30px;
+    margin-right: 10px;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.name{
+    margin-top: 10px;
 }
 
 .name, .desc, .price{
     color: lightgreen;
     font-family:"Jost", sans-serif ;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 900;
     position: relative;
-    top: 30px;
     margin-left: 10px;
 }
 
-.name, .desc, .price, .addtocart{
+.name, .desc, .price{
     display: flex;
     margin-bottom: 5px;
 }
 
 .addtocart{
+    height: 50px;
     position: relative;
-    right: 10px;
-    float: right;
     font-size: 23px;
-    font-weight: 400;
-    font-family: "Jost", sans-serif;
-    background: rgb(128, 202, 110);
-    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 100;
+    font-family: 'Martian Mono', monospace;
+    background:#2f3e46;
     cursor: pointer;
-    transition: transform 500ms ease;
+    transition: all 550ms ease;
 }
 .addtocart:hover{
-    transform: scale(1.2);}
+    background: RGB(66, 84, 70);
+    color: white;
+}
 
+.containerImg{
+    position: relative;
+    border-radius: 10px 10px 10px 10px;    
+    width: 230px;
+    height: 230px;  
+    overflow: hidden;
+    display: flex;
+}
 
-.item img{
+.containerImg img{
+    position: absolute;
+    object-fit: contain;
     width: 100%;
-    min-height: 280px;
+    height: 100%;
     border-radius: 10px 10px 10px 10px;
     transition: transform 500ms ease;
     cursor: pointer;
-}
-
-.item img:hover{
-    transform:scale(1.1)
 }
 
 .price{
@@ -64,44 +76,6 @@
     font-family: 'Martian Mono', monospace;
 }
 
-.fullitem .FullItemTitle, .FullItemDesc, .FullItemPrice{ 
-    position: relative;
-    top: 20px;
-    margin: 10px 20px;
-    color: lightgreen;
-    font-family:"Jost", sans-serif ;
-    font-size: 20px;
-}
-    
-.fullitem .FullItemImg{
-    width: 100%;
-    border-radius: 10px 10px 10px 10px;
-    transition: transform 500ms ease;
-    cursor: pointer;
-    }
-    
-.fullitem .FullItemImg:hover{
-    transform:scale(1.1)
-}
-    
-.fullitem .FullItemPrice{
-    font-size: 28px;
-    font-family: 'Martian Mono', monospace; 
-    color:white
-}
-    
-.fullitem .addtocart_fullitem{
-    position: absolute;
-    right: 30px;
-    bottom: 30px;
-    font-size: 23px;
-    font-weight: 400;
-    font-family: "Jost", sans-serif;
-    background: rgb(128, 202, 110);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 500ms ease;
-    }
     
 .fullitem {
     position: fixed;
@@ -115,11 +89,41 @@
 }
     
 .fullitem > div {
-    width: 400px;
+    height: 100vh;
+    width: 100vw;
     position: relative;
-    margin: 10% auto;
-    padding: 40px 30px;
     background: #777;
     border-radius: 15px;
 }
 
+.fullItemContainers{
+    display: flex;
+}
+
+.containerFullItemImg{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.FullItemImg{
+    position: relative;
+    width: 90%;
+    height:75%;
+    top:50px;
+    left:50px;
+    right:0;
+    bottom:0;
+}
+
+.containerFullItemImg img:hover{
+    transform:scale(1.05)
+}
+
+.containerFullItemStrings{
+    display: flex;
+    flex-direction: column;
+    font-family: "Jost", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}

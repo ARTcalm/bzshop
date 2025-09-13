@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import mainstyles from '../../MainWareHouse.module.css'
 import styles from './Slider.module.css';
 import Carousel from 'react-multi-carousel';
@@ -10,11 +10,11 @@ const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
-            items: 4
+            items: 3
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 4
+            items: 3
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -34,7 +34,7 @@ const responsive = {
             showDots={false}
             infinite={true}
             autoPlay={true}
-            autoPlaySpeed={3000}
+            autoPlaySpeed={1000}
             customTransition='transform 1000ms ease-in-out'
             transitionDuration={1000} 
             

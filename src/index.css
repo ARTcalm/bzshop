@@ -9,8 +9,12 @@
         text-decoration:none;
     }
 }
+
+main{
+    padding-top: 110px;
+}
+
 body {
-    background: #333;
     color: white;
     overflow-x: hidden;
 }

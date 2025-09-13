@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import styles from './AddToAuction.module.css';
 
-export const AddToAuction = () => {
+export const Auction = () => {
 
-  let[WarningMessage, setWarningMessage] = useState(false)
+    let[WarningMessage, setWarningMessage] = useState(false)
 
-return( 
-      <main className={styles.main}>
+    return (
+      <div className={styles.main}>
         <div className={styles.HeadBackground}>
           {WarningMessage && (
           <div className={styles.WarningMessage} onClick={() => setWarningMessage(WarningMessage = !WarningMessage)}> 
@@ -41,8 +41,9 @@ return(
           </div>
 
         </div>
-      </main>
- )
+      </div>
+  )
 }
+
 
 
